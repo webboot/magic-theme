@@ -1,0 +1,54 @@
+{
+  "name": "@webboot/magic-theme",
+  "version": "0.0.1",
+  "author": "Wizards & Witches @ Webboot DAO",
+  "homepage": "https:/webboot.org",
+  "license": "AGPL-3.0",
+  "description": "this is the foundational theme for all @webboot pages",
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
+  "engines": {
+    "node": ">=13.5.0"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "start": "t -p",
+    "format": "f -w --exclude docs",
+    "test": "t --exclude docs example config.js",
+    "build": "NODE_ENV=production magic build",
+    "prod": "NODE_ENV=production magic build serve --watch src",
+    "dev": "magic dev --watch src",
+    "calls": "calls"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webboot/magic-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webboot/magic-theme/issues"
+  },
+  "devDependencies": {
+    "@magic-modules/gdpr": "0.0.14",
+    "@magic-modules/light-switch": "0.0.5",
+    "@magic-modules/pre": "0.0.2",
+    "@magic/core": "0.0.21",
+    "@magic/format": "0.0.7",
+    "@magic/test": "0.1.33"
+  },
+  "keywords": [
+    "magic",
+    "magic-themes",
+    "docs",
+    "hyperapp"
+  ],
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "github": "jaeh"
+    }
+  ]
+}
