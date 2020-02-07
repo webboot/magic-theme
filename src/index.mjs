@@ -1,33 +1,33 @@
-export default (vars = {}) => {
-  const {
-    colors,
-    grey = '#5a5d62',
-    darkText = '#c4c7cc',
-    backgroundDark = '#212121',
-    backgroundLight = '#E0E0E0',
-    lightText = '#212121',
-    red = '#ea4144',
-    redLight = '#ff6e70',
-    redDark = '#c82122',
-    white = '#ffffff',
+export const vars = {
+  grey: '#5a5d62',
+  darkText: '#c4c7cc',
+  backgroundDark: '#212121',
+  backgroundLight: '#E0E0E0',
+  lightText: '#212121',
+  red: '#ea4144',
+  redLight: '#ff6e70',
+  redDark: '#c82122',
+  white: '#ffffff',
 
-    linkColor = '#c4c7cc',
-    linkColorLight = '#212121',
+  linkColor: '#c4c7cc',
+  linkColorLight: '#212121',
 
-    linkColorHover = '#9E9E9E',
-    linkColorHoverLight = '#9E9E9E',
+  linkColorHover: '#9E9E9E',
+  linkColorHoverLight: '#9E9E9E',
 
-    maxWidth = '1000px',
+  maxWidth: '1000px',
 
-    fadeDuration = '500ms',
-  } = vars
+  fadeDuration: '500ms',
 
-  const widths = {
+  widths: {
     tablet: 500,
     laptop: 1024,
     desktop: 1600,
-    ...vars.widths,
   }
+}
+
+export default (v = {}) => {
+  v = { ...vars, ...v }
 
   return {
     body: {
@@ -46,13 +46,13 @@ export default (vars = {}) => {
     },
 
     '#Magic': {
-      backgroundColor: backgroundDark,
-      color: darkText,
-      transition: `color ${fadeDuration}, background-color ${fadeDuration}`,
+      backgroundColor: v.backgroundDark,
+      color: v.darkText,
+      transition: `color ${v.fadeDuration}, background-color ${v.fadeDuration}`,
 
       '&.light': {
-        backgroundColor: backgroundLight,
-        color: lightText,
+        backgroundColor: v.backgroundLight,
+        color: v.lightText,
       },
     },
 
@@ -60,7 +60,7 @@ export default (vars = {}) => {
       '> div': {
         padding: '5%',
         width: '100%',
-        maxWidth: maxWidth,
+        maxWidth: v.maxWidth,
         margin: '0 auto',
 
         '&#hero': {
@@ -76,18 +76,18 @@ export default (vars = {}) => {
     h5: { fontSize: '1.1em', padding: 0 },
 
     a: {
-      color: linkColor,
-      transition: `color ${fadeDuration}`,
+      color: v.linkColor,
+      transition: `color ${v.fadeDuration}`,
 
       '&:hover': {
-        color: linkColorHover,
+        color: v.linkColorHover,
       },
 
       '.light &&': {
-        color: linkColorLight,
+        color: v.linkColorLight,
 
         '&:hover': {
-          color: linkColorHoverLight,
+          color: v.linkColorHoverLight,
         },
       },
     },
@@ -129,7 +129,7 @@ export default (vars = {}) => {
       },
     },
 
-    [`@media screen and (min-width: ${widths.tablet}px)`]: {
+    [`@media screen and (min-width: ${v.widths.tablet}px)`]: {
       '.Menu': {
         float: 'right',
         margin: 0,
