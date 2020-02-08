@@ -12,8 +12,8 @@ export const vars = {
   linkColor: '#c4c7cc',
   linkColorLight: '#212121',
 
-  linkColorHover: '#9E9E9E',
-  linkColorHoverLight: '#9E9E9E',
+  linkColorHover: '#ea4144',
+  linkColorHoverLight: '#ea4144',
 
   maxWidth: '1000px',
 
@@ -23,7 +23,7 @@ export const vars = {
     tablet: 500,
     laptop: 1024,
     desktop: 1600,
-  }
+  },
 }
 
 export default (v = {}) => {
@@ -69,7 +69,7 @@ export default (v = {}) => {
       },
     },
 
-    h1: { fontSize: '1.5em' },
+    h1: { fontSize: '1.5em', color: v.red },
     h2: { fontSize: '1.4em' },
     h3: { fontSize: '1.3em' },
     h4: { fontSize: '1.2em' },
