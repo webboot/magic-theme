@@ -69,8 +69,9 @@ export default (v = {}) => {
       },
     },
 
-    h1: { fontSize: '1.5em', color: v.red },
-    h2: { fontSize: '1.4em', color: v.red },
+    'h1,h2,h3': { color: v.red },
+    h1: { fontSize: '1.5em' },
+    h2: { fontSize: '1.4em' },
     h3: { fontSize: '1.3em' },
     h4: { fontSize: '1.2em' },
     h5: { fontSize: '1.1em', padding: 0 },
