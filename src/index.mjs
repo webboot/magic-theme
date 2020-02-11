@@ -1,19 +1,19 @@
 export const vars = {
-  grey: '#5a5d62',
-  darkText: '#c4c7cc',
+  grey: '#5a5a5a',
+  darkText: '#c4c4c4',
   backgroundDark: '#212121',
-  backgroundLight: '#E0E0E0',
+  backgroundLight: '#e0e0e0',
   lightText: '#212121',
-  red: '#ea4144',
-  redLight: '#ff6e70',
-  redDark: '#c82122',
+  red: '#ea4444',
+  redLight: '#ff7070',
+  redDark: '#c82222',
   white: '#ffffff',
 
-  linkColor: '#c4c7cc',
+  linkColor: '#c4c4c4',
   linkColorLight: '#212121',
 
-  linkColorHover: '#ea4144',
-  linkColorHoverLight: '#ea4144',
+  linkColorHover: '#ea4444',
+  linkColorHoverLight: '#ea4444',
 
   maxWidth: '1000px',
 
