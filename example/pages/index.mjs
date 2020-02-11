@@ -21,6 +21,7 @@ export default {
   // ... other config
   THEME: '@webboot/magic-theme',
 }`),
+    p('magic will then find and merge the themes automatically, just as it did on this page'),
 
     h3({ id: 'colors' }, 'colors'),
     p('@webboot/magic-theme exports and uses the following default colors:'),
@@ -60,8 +61,6 @@ export default {
         ['desktop', '1600px'],
       ].map(([name, width]) => li([name, ': ', width])),
     ),
-
-    p('magic will then find and merge the themes automatically, just as it did on this page'),
   ])
 
 export const style = {
