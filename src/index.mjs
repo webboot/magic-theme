@@ -1,32 +1,36 @@
 export const vars = {
-  neutral: '#5a5a5a',
-  text: {
-    dark: '#c4c4c4',
-    light: '#212121',
+  background: {
+    dark: '#212121',
+    light: '#e0e0e0',
   },
+
   link: {
     dark: '#c4c4c4',
     light: '#212121',
+
     hover: {
       dark: '#ea4444',
       light: '#ea4444',
     },
   },
-  background: {
-    backgroundDark: '#212121',
-    backgroundLight: '#e0e0e0',
-  },
+
+  neutral: '#5a5a5a',
 
   primary: {
-    neutral: '#ea4444',
-    light: '#ff7070',
     dark: '#c82222',
+    light: '#ff7070',
+    neutral: '#ea4444',
   },
 
   secondary: {
-    neutral: '#55aa55',
-    light: '70ff70',
-    dark: '22c822',
+    dark: '#22c822',
+    light: '#70ff70',
+    neutral: '#44ea44',
+  },
+
+  text: {
+    dark: '#c4c4c4',
+    light: '#212121',
   },
 
   white: '#ffffff',
@@ -62,13 +66,13 @@ export default (v = {}) => {
     },
 
     '#Magic': {
-      backgroundColor: v.backgroundDark,
-      color: v.darkText,
+      backgroundColor: v.background.dark,
+      color: v.text.dark,
       transition: `color ${v.fadeDuration}, background-color ${v.fadeDuration}`,
 
       '&.light': {
-        backgroundColor: v.backgroundLight,
-        color: v.lightText,
+        backgroundColor: v.background.light,
+        color: v.text.light,
       },
     },
 
@@ -85,7 +89,7 @@ export default (v = {}) => {
       },
     },
 
-    'h1,h2,h3': { color: v.red },
+    'h1,h2,h3': { color: v.primary.neutral },
     h1: { fontSize: '1.5em' },
     h2: { fontSize: '1.4em' },
     h3: { fontSize: '1.3em' },
@@ -93,18 +97,18 @@ export default (v = {}) => {
     h5: { fontSize: '1.1em', padding: 0 },
 
     a: {
-      color: v.linkColor,
+      color: v.link.dark,
       transition: `color ${v.fadeDuration}`,
 
       '&:hover': {
-        color: v.linkColorHover,
+        color: v.link.hover.dark,
       },
 
       '.light &&': {
-        color: v.linkColorLight,
+        color: v.link.light,
 
         '&:hover': {
-          color: v.linkColorHoverLight,
+          color: v.link.hover.light,
         },
       },
     },
