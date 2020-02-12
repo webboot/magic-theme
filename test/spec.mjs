@@ -15,5 +15,5 @@ export default [
     expect: t => t.includes('.Menu'),
     info: 'theme contains at least a .Menu style',
   },
-  { fn: is.deep.equal(vars, state.vars ), expect: true, info: 'app and theme export same vars' },
+  { fn: is.deep.equal(vars, state.vars), expect: true, info: 'app and theme export same vars' },
 ]
