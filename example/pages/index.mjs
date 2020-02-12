@@ -24,5 +24,5 @@ export default {
 
     p('magic will then find and merge the themes automatically, just as it did on this page'),
 
-    ThemeVars(state.vars),
+    div({ id: 'theme-vars' }, ThemeVars(state.vars)),
   ])
