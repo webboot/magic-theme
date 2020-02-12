@@ -38,7 +38,7 @@ export const state = {
     secondary: {
       dark: '#22c822',
       light: '#70ff70',
-      neutral: '#55aa55',
+      neutral: '#44ea44',
     },
 
     text: {
