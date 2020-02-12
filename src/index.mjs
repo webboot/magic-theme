@@ -130,7 +130,20 @@ export default (v = {}) => {
       maxWidth: 'inherit',
     },
 
+    '.Header': {
+      padding: '.5em 0 0',
+      width: '100%',
+
+      '> div': {
+        margin: '0 auto',
+        maxWidth: '1000px',
+        padding: '0 5%',
+      },
+    },
+
     '.Menu': {
+      lineHeight: 1,
+      margin: '0.7em 0 0',
       float: 'none',
     },
 
@@ -139,6 +152,7 @@ export default (v = {}) => {
       bottom: '0.5em',
       right: '0.5em',
     },
+
     '.Gdpr': {
       left: 'auto',
       right: '0.5em',
