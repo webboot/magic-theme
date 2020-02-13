@@ -50,5 +50,8 @@ export default {
 ##### 0.0.1
 first release
 
-##### 0.0.2 - unreleased
+##### 0.0.2
+remove margin 0 from .Menu on tablet width
+
+##### 0.0.3 - unreleased
 ...
