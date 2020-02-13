@@ -167,7 +167,6 @@ export default (v = {}) => {
     [`@media screen and (min-width: ${v.widths.tablet}px)`]: {
       '.Menu': {
         float: 'right',
-        margin: 0,
       },
       '.Logo': {
         float: 'left',
