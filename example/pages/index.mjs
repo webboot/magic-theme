@@ -1,4 +1,5 @@
-export const View = state =>
+export const View = state => [
+  Hero(state),
   div([
     h1('@webboot/magic-theme'),
     p([
@@ -26,3 +27,4 @@ export default {
 
     div({ id: 'theme-vars' }, ThemeVars(state.vars)),
   ])
+]
