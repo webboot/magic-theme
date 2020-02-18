@@ -12,8 +12,8 @@ export default [
   { fn: () => css.stringify(theme), expect: is.string, info: 'theme can be parsed by css lib' },
   {
     fn: () => css.stringify(theme),
-    expect: t => t.includes('.Menu'),
-    info: 'theme contains at least a .Menu style',
+    expect: t => t.includes('.Logo'),
+    info: 'theme contains a .Logo style',
   },
   { fn: is.deep.equal(vars, state.vars), expect: true, info: 'app and theme export same vars' },
 ]
