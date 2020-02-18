@@ -3,6 +3,6 @@ export default {
   WEB_ROOT: '/magic-theme/',
   PUBLIC: 'docs',
   URL: 'webboot.github.io/magic-theme',
-  THEME: 'webboot-magic-theme',
+  THEME: ['project', 'webboot-magic-theme'],
   HOIST: ['Gdpr', 'LightSwitch'],
 }
