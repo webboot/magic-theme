@@ -17,9 +17,9 @@ export const state = {
     content: ['automagically verify the integrity of homepages,', 'before you load them.'],
 
     menu: [
-      { to: '/#about', text: 'about' },
-      { to: '/getting-started/', text: 'getting started' },
-      { to: '/#support', text: 'support' },
+      { to: '/#installation', text: 'installation' },
+      { to: '/#usage', text: 'usage' },
+      { to: '/#theme-vars', text: 'theme vars' },
     ],
   },
 
