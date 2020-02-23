@@ -56,5 +56,8 @@ remove margin 0 from .Menu on tablet width
 ##### 0.0.3
 this theme now extends @magic-themes/project.
 
-##### 0.0.4 - unreleased
+##### 0.0.4
+export state from theme.
+
+##### 0.0.5 - unreleased
 ...
