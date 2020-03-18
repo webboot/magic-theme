@@ -4,5 +4,5 @@ export default {
   PUBLIC: 'docs',
   URL: 'webboot.github.io/magic-theme',
   THEME: ['project', 'webboot-magic-theme'],
-  HOIST: ['Gdpr', 'LightSwitch'],
+  HOIST: ['LightSwitch', 'Gdpr'],
 }
