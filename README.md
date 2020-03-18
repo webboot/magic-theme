@@ -1,7 +1,7 @@
 ## @webboot/magic-theme
 
 the [@magic-theme](https://magic-themes.github.io/) for @webboot.
-shared between all @webboot pages to get unify color scheme and page layout
+shared between all @webboot pages to get a unified color scheme and page layout
 
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
