@@ -32,14 +32,14 @@
     "url": "https://github.com/webboot/magic-theme/issues"
   },
   "devDependencies": {
-    "@magic-modules/gdpr": "0.0.14",
+    "@magic-modules/gdpr": "0.0.15",
     "@magic-modules/light-switch": "0.0.5",
     "@magic-modules/pre": "0.0.7",
     "@magic-modules/theme-vars": "0.0.6",
     "@magic-themes/project": "0.0.13",
-    "@magic/core": "0.0.60",
-    "@magic/format": "0.0.7",
-    "@magic/test": "0.1.38"
+    "@magic/core": "0.0.71",
+    "@magic/format": "0.0.10",
+    "@magic/test": "0.1.46"
   },
   "keywords": [
     "magic",
