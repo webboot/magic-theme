@@ -59,5 +59,8 @@ this theme now extends @magic-themes/project.
 ##### 0.0.4
 export state from theme.
 
-##### 0.0.5 - unreleased
+##### 0.0.5
+bump required node version to 14.2.0
+
+##### 0.0.6 - unreleased
 ...
