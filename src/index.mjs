@@ -98,4 +98,15 @@ export default vars => ({
       width: '2.6em',
     },
   },
+
+  '.NoSpy': {
+    right: '0.5em',
+    left: 'auto',
+
+    '.ShowHide': {
+      bottom: '3em',
+      left: 'auto',
+      right: '0.5em',
+    },
+  },
 })
